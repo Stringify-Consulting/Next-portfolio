@@ -300,7 +300,7 @@ export function Tantalizer(){
 
           <Button />
           <div className="p-8">
-            <Image src={footerImage} alt="footer" />
+            <Image src={footerImage} alt="footerImage" />
           </div>
       </section>
 
