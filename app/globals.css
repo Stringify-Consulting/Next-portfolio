@@ -12,7 +12,7 @@
   --font-mono: var(--font-geist-mono);
   --breakpoint-mobile: 45rem;
   --breakpoint-tablet: 64rem;
-  --breakpoint-laptop: 64rem;
+  --breakpoint-laptop: 90rem;
 }
 
 @media (prefers-color-scheme: dark) {
