@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-
 const Home = () => {
   return (
     <div
@@ -54,8 +53,13 @@ const Home = () => {
  <Link href="/slider-bar" style={{ color: '#3182ce', textDecoration: 'underline' }}>
  Sidebar Design 
  </Link>
+        <Link href="/recent-project">ProjectCard</Link>
+        <Link href="/proficient-areas">Proficient Areas</Link>
+        <Link href="/about-me">About Me</Link>
+        <Link href="/tantalizer">Tantalizer</Link>
+
     </div>
-      
+  
   );
 };
 
