@@ -25,5 +25,81 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* styles/globals.css */
+
+/* Default Button Styling */
+.responsive-button {
+  color: #FFFFFF;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 12px 24px;
+  background-color: #000000;  /* Black background */
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: auto;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  text-align: center;
+  background-clip: padding-box;
+  border: 4px solid transparent; /* Transparent border to show the moving gradient */
+  animation: gradientMovement 4s linear infinite; /* Apply the yellow gradient animation */
+  cursor: pointer; /* Pointer cursor to indicate it's clickable */
+}
+
+/* Hover Effect */
+.responsive-button:hover {
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+  box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8); /* Add a glowing effect around the button */
+}
+
+/* "Copied!" text styling */
+.responsive-button span {
+  color: #FFFFFF;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+  .responsive-button {
+    font-size: 14px; /* Smaller text on mobile */
+    padding: 8px 16px; /* Smaller padding on mobile */
+  }
+
+  .responsive-button span {
+    font-size: 12px; /* Smaller "Copied!" text */
+  }
+
+  .responsive-button svg {
+    font-size: 18px; /* Smaller icon on mobile */
+  }
+}
+
+/* Keyframes for the moving yellow gradient effect */
+@keyframes gradientMovement {
+  0% {
+    background-image: linear-gradient(45deg, #000000, #000000, #000000, #000000);  /* Initial yellow gradient */
+    background-size: 400% 400%;
+    background-position: 100% 100%;  /* Gradient starts from the right */
+  }
+  50% {
+    background-image: linear-gradient(45deg, #000000, #000000, #000000, #000000);  /* Moving yellow gradient */
+    background-size: 400% 400%;
+    background-position: 0% 0%;  /* Gradient moves to the left */
+  }
+  100% {
+    background-image: linear-gradient(45deg, #000000, #000000, #000000, #000000);  /* Ends back at the starting position */
+    background-size: 400% 400%;
+    background-position: 100% 100%;  /* Back to the right */
+  }
+}
+
+
