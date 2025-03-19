@@ -32,7 +32,7 @@ const MyCareAssistants: React.FC = () => {
       <div className={styles.container}>
         {/* Background Image */}
         <Image
-          src="/image/shine.png"
+          src="/image/shin.png"
           alt="Background"
           fill
           className={styles.bgImage}
