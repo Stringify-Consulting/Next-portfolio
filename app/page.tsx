@@ -47,16 +47,23 @@ const Home = () => {
  <Link href="/thank-you-card" style={{ color: '#3182ce', textDecoration: 'underline' }}>
   Thank you card 
  </Link>
- <Link href="/my-care-assistants" style={{ color: '#3182ce', textDecoration: 'underline' }}>
+ <Link href="/my-care-assistants-design" style={{ color: '#3182ce', textDecoration: 'underline' }}>
   MyCare Assistants Design 
  </Link>
  <Link href="/slider-bar" style={{ color: '#3182ce', textDecoration: 'underline' }}>
  Sidebar Design 
  </Link>
-        <Link href="/recent-project">ProjectCard</Link>
-        <Link href="/proficient-areas">Proficient Areas</Link>
-        <Link href="/about-me">About Me</Link>
-        <Link href="/tantalizer">Tantalizer</Link>
+ <Link href="/recent-project">ProjectCard</Link>
+<Link href="/proficient-areas">Proficient Areas</Link>
+<Link href="/about-me">About Me</Link>
+<Link href="/tantalizer">Tantalizer</Link>
+
+<Link href="/tantalizer-design" style={{ color: '#3182ce', textDecoration: 'underline' }}>
+  Tantalizer Design
+</Link>
+<Link href="/home-page-card" style={{ color: '#3182ce', textDecoration: 'underline' }}>
+  Homepage Components
+</Link>
 
     </div>
   

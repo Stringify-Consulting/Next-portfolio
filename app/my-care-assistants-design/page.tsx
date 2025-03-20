@@ -13,6 +13,7 @@ import styles from './MyCareAssistants.module.css';
 import ThankYouFooter from '@/components/ThankYouCard';
 import { Bruno_Ace, Poppins, Figtree } from 'next/font/google';
 
+
 // Fonts
 const brunoAce = Bruno_Ace({ subsets: ['latin'], weight: '400' });
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '700'] });
@@ -28,7 +29,8 @@ const images = [
 
 const MyCareAssistants: React.FC = () => {
   return (
-    <div className={styles.wrapper}>
+   <>
+     <div className={styles.wrapper}>
       <div className={styles.container}>
         {/* Background Image */}
         <Image
@@ -101,13 +103,20 @@ const MyCareAssistants: React.FC = () => {
         <WantToKnowCard />
 
         <div className={styles.projectCardContainer}>
-          <ProjectCard />
+        <ProjectCard
+        title="NEXT PROJECT"
+        projectTitle="Restaurant Website"
+        description="Redesign"
+        imageSrc="/image/Scene 12 1.png"
+      />
         </div>
 
         {/* Thank You Footer */}
         <ThankYouFooter />
       </div>
     </div>
+    </>
+
   );
 };
 

@@ -85,10 +85,12 @@
   
   .highlight {
     opacity: 1;
+    font-family: figtree;
     font-size: 190px;
-    font-weight: 400;
+    font-weight: 800;
     color: white;
     margin-left: 10px;
+    letter-spacing: 6%;
   }
 
   @media (max-width: 768px) {
