@@ -1,26 +1,31 @@
 "use client";
 
-import './globals.css'; // Import global styles
-import '../dist/output.css'; 
+import './globals.css';
+import "../src/output.css"
+
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { Bruno_Ace } from "next/font/google";
+import { Poppins } from "next/font/google";
 
-const brunoAce = Bruno_Ace({ subsets: ["latin"], weight: "400" });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap"
+});
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname(); // Current route path
+  const pathname = usePathname();
 
   return (
     <html lang="en">
-      <body>
+      <body className={poppins.className}>
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
-            key={pathname} // Animate based on route change
-            initial={{ opacity: 0, x: -100 }} // Page enters from left
-            animate={{ opacity: 1, x: 0 }} // Smoothly appears in place
-            exit={{ opacity: 0, x: 100 }} // Page exits to right
-            transition={{ duration: 0.5 }} // Speed of the animation
+            key={pathname}
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 100 }}
+            transition={{ duration: 0.5 }}
           >
             {children}
           </motion.div>
