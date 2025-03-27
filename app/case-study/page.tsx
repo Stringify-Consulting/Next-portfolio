@@ -11,10 +11,10 @@ import MyQuraClient from "../components/MyQuraClient";
 import MyQuraCareProfessional from "../components/MqcProfessional";
 import AdminPortal from "../components/AdminPortal";
 import NextProject from "../components/NextPage";
-import ThankYouFooter from "@/Next-portfolio/components/ThankYouCard";
 import Sidebar from "@/Next-portfolio/components/SliderBar";
 import ToggleButton from "@/Next-portfolio/components/ToggleButton"; 
 import NextProjectButton from "@/Next-portfolio/components/ArrowButton";
+import ThankYouFooter from "../components/ThankYouFooter";
 
 export default function CaseStudyPage() {
   return (
