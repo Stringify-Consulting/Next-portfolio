@@ -64,6 +64,21 @@ const Home = () => {
 <Link href="/home-page-card" style={{ color: '#3182ce', textDecoration: 'underline' }}>
   Homepage Components
 </Link>
+<Link href="/rock-realty-limited-design" style={{ color: '#3182ce', textDecoration: 'underline' }}>
+  Rock Realty Limited Design
+</Link>
+<Link href="/menu-slider" style={{ color: '#3182ce', textDecoration: 'underline' }}>
+  Menu Slider
+</Link>
+<Link href="/video-components" style={{ color: '#3182ce', textDecoration: 'underline' }}>
+  video component
+</Link>
+<Link href="/kwats-page-design" style={{ color: '#3182ce', textDecoration: 'underline' }}>
+  Kwats Page Design
+</Link>
+<Link href="/coming-soon" style={{ color: '#3182ce', textDecoration: 'underline' }}>
+  Coming Soon Component
+</Link>
 
     </div>
   

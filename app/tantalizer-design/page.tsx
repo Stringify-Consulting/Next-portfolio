@@ -7,9 +7,10 @@ import ImageCardComponent from '../../components/ImageCardStructure';
 import ProjectCard from '@/components/ProductCard';
 import WantToKnowCard from '@/components/WantToKnowCard';
 import Sidebar from '@/components/SliderBar';
-import HomePage from '@/components/HomePageCard'
+import HomePageCard from '@/components/HomePageCard';
 import Image from 'next/image';
 import styles from './TantalizerDesign.module.css';
+import MenuSlider from '@/components/SliderImage';
 import ThankYouFooter from '@/components/ThankYouCard';
 import { Bruno_Ace, Poppins, Figtree } from 'next/font/google';
 
@@ -18,6 +19,44 @@ import { Bruno_Ace, Poppins, Figtree } from 'next/font/google';
 const brunoAce = Bruno_Ace({ subsets: ['latin'], weight: '400' });
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '700'] });
 const figtree = Figtree({ subsets: ['latin'], weight: '900' });
+
+const images = [
+  { src: '/image/Tantalizer Home Page 2.png', alt: 'Light Theme Homepage' },
+  { src: '/image/Frame 115.png', alt: 'Dark Theme Homepage' },
+];
+
+const menuItems = [
+  {
+    src: '/image/Menu Page 1.png',
+    alt: 'Light Theme Homepage',
+    title: 'MENU',
+  },
+  {
+    src: '/image/Sidebar Cart Page 1.png',
+    alt: 'Dark Theme Homepage',
+    title: 'SIDEBAR CART',
+  },
+  {
+    src: '/image/shopping_cart.png',
+    alt: 'Another Menu',
+    title: 'CART',
+  },
+  {
+    src: '/image/checkout.png',
+    alt: 'Another Menu',
+    title: 'CHECKOUT',
+  },
+  {
+    src: '/image/success page.png',
+    alt: 'Another Menu',
+    title: 'SUCCESS PAGE',
+  },
+  {
+    src: '/image/Track your order page.png',
+    alt: 'Another Menu',
+    title: 'TRACK YOUR ORDER',
+  },
+];
 
 const MyCareAssistants: React.FC = () => {
   return (
@@ -73,12 +112,11 @@ const MyCareAssistants: React.FC = () => {
 
         {/* Homepage Section */}
         <h2 className={`${figtree.className} ${styles.sectionTitle}`}>HOME PAGE</h2>
-        <HomePage />
+        <HomePageCard images={images} />
        
         {/* Menu Section */}
-        <div>
-        <ImageCardComponent src="/image/Component 5.png" alt="Scene 1" width={1072} height={505} />
-        </div>
+        <MenuSlider items={menuItems} />
+        
         
         {/* Want to know  Components */}
         <WantToKnowCard />
