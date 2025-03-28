@@ -1,8 +1,8 @@
-<<<<<<< HEAD
 import Link from 'next/link';
 
 const Home = () => {
   return (
+  <>
     <div
       style={{
         display: 'flex',
@@ -61,18 +61,16 @@ const Home = () => {
 
     </div>
   
-=======
-import Home from "./home/page";
-export default function HomePage() {
-  return (
-    <div className=" items-center justify-center ">
-      <Home />
-    </div>
->>>>>>> d503d8e26f13ca11694b9e3bc9b8af11bf88a359
-  );
-};
-
-export default Home;
+  <div className="items-center justify-center">
+  <Link href="/tools-stack">Go to ToolStack</Link>
+<Link href="/projects">Go to Projects</Link>
+<Link href="/case-study">Go to Case Study</Link>
+  </div>
+    </>
+    );
+  };
+  
+  export default Home;
 
 
 
