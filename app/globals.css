@@ -1,11 +1,12 @@
 @import "tailwindcss";
+/* Custom styles */
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
+:root {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -14,7 +15,6 @@
   --breakpoint-tablet: 64rem;
   --breakpoint-laptop: 90rem;
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -100,6 +100,213 @@ body {
     background-size: 400% 400%;
     background-position: 100% 100%;  /* Back to the right */
   }
+}
+
+
+/* body {
+  font-family: "Poppins", sans-serif;
+} */
+
+/* Update the project-grid styles */
+.project-grid {
+  display: grid;
+  gap: 2rem;
+  justify-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  overflow: visible;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 640px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+/* Update project-card styles for better responsiveness */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  aspect-ratio: 4/5;
+  cursor: pointer;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: rgb(44 44 44 / var(--tw-border-opacity, 1));
+  padding: 8px;
+  gap: 8px;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  width: 100%;
+  max-width: 408px;
+}
+
+.project-card h3 {
+  position: absolute; /* Position text relative to the container */
+  bottom: 10px; /* Place the text near the bottom of the image */
+  left: 10px; /* Add some padding from the left edge */
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 35px 10px; /* Add padding for better spacing */
+  border-radius: 5px; /* Optional: rounded corners for the text background */
+}
+
+.project-card p {
+  position: absolute; /* Position text relative to the container */
+  bottom: 10px; /* Place the text near the bottom of the image */
+  left: 10px; /* Add some padding from the left edge */
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9); /* Slight opacity for better readability */
+  padding: 5px 10px; /* Add padding for better spacing */
+  border-radius: 5px; /* Optional: rounded corners for the text background */
+}
+
+.toolstack-container {
+  width: 384px;
+  height: 148px;
+  border: 1px dashed #9747FF;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px 5px;
+}
+
+.top-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.bottom-row {
+  display: flex;
+  gap: 15px;
+  padding-top: 10px;
+  padding-left: 2px;
+}
+
+.tool {
+  position: relative;
+  width: 52px;
+  height: 52px;
+}
+
+.tool-image {
+  width: 100%;
+  width: 52px;
+  height: 52px;
+  border-radius: 5px;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 80px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 4px 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  background-color: #000;
+}
+
+@media (min-width: 251px) and (max-width: 419px) {
+  .toolstack-container {
+    width: 90%;
+    max-width: 384px;
+    height: auto;
+    padding: 15px;
+    display: grid;
+    grid-column: inherit;
+    align-items: center;
+  }
+
+@media screen and (min-width: 355px) and (max-width: 419px) {
+  .toolstack-container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .top-row, .bottom-row {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .tool {
+    width: 100%;
+    width: 48px;
+    height: 48px;
+  }
+
+  .tool-image {
+    width: 100%;
+    width: 48px;
+    height: 48px;
+  }
+
+  .tooltip {
+    bottom: 70px;
+    width: 70px;
+    height: 25px;
+    background-color: #000;
+  }
+  
+}
+
+@media (min-width: 251px) and (max-width: 419px) {
+  .top-row, .bottom-row {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .tooltip {
+    bottom: 60px;
+    width: 65px;
+    height: 22px;
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+}
+
+}
+
+.project-card .rectangle,
+.project-card > div > div {
+  width: 100% !important;
+  max-width: 100%;
+  padding: 8px;
+}
+
+.project-card > div > div:nth-child(3) {
+  padding: 0 !important; /* Remove padding */
+  display: flex !important; /* Keep as flex */
+  align-items: stretch !important; /* Stretch items */
+  justify-content: stretch !important; /* Stretch items */
+  overflow: hidden !important; /* Hide overflow */
+}
+
+.project-card:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) 
+             rotate(var(--tw-rotate)) 
+             skewX(var(--tw-skew-x)) 
+             skewY(var(--tw-skew-y)) 
+             scaleX(var(--tw-scale-x)) 
+             scaleY(var(--tw-scale-y));
 }
 
 
