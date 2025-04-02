@@ -24,6 +24,7 @@
     .imageCardContainer {
       margin: 40px 5px;
       border-radius: 16px;
+      height: auto;
     }
   
     .imageCardContainer img {
