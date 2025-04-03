@@ -1,5 +1,4 @@
 import './globals.css';
-import "../src/output.css";
 import { Poppins, Bruno_Ace, Figtree } from "next/font/google";
 import type { Metadata } from "next";
 import ClientLayout from './client-layout.tsx/page';
