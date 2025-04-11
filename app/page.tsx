@@ -3,8 +3,6 @@ import Link from 'next/link';
 const Home = () => {
   return (
 
-    <>
-
     <div
       style={{
         display: 'flex',
@@ -90,7 +88,6 @@ const Home = () => {
   <Link href="/case-study">Go to CaseStudy</Link>
   <Link href="/projects">Go to Projects</Link>
         </div>
-          </>
         );
   };
   
