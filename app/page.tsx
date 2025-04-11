@@ -80,18 +80,12 @@ const Home = () => {
 <Link href="/coming-soon" style={{ color: '#3182ce', textDecoration: 'underline' }}>
   Coming Soon Component
 </Link>
-
-
-  
-  <div className="items-center justify-center">
   <Link href="/tools-stack">Go to ToolStack</Link>
   <Link href="/case-study">Go to CaseStudy</Link>
   <Link href="/projects">Go to Projects</Link>
-        </div>
-        );
-  };
-  
-  export default Home;
+
+    </div>
+    
   );
 };
 
