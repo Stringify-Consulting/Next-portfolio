@@ -33,7 +33,7 @@ interface RetrospectProps{
   heading: string
 }
 
-export function HeadImage(){
+const HeadImage = () => {
  return(
   <div className="pr-8 pl-8">
     <Image className="rounded-2xl md:w-[55rem] lg:w-[60rem]" src={mockupImage} width={400} height={350} alt="mockup image"/>
@@ -41,7 +41,7 @@ export function HeadImage(){
  )
 }
 
-export function MidPageLogo(){
+const MidPageLogo = () => {
   return(
    <>
      <Image className="w-[31rem] mt-16 mb-16 md:w-dvw lg:w-dvw" src={standAloneLogo} width={400} height={350} alt="mockup image"/>
@@ -53,7 +53,7 @@ export function MidPageLogo(){
  const poppins = Poppins({ subsets: ['latin'], weight: ['400', '700'] });
  const figtree = Figtree({ subsets: ['latin'], weight: '900' });
  
-export function PainpointBox({children, sectionHeader}: PainpointProps){
+const PainpointBox = ({children, sectionHeader}: PainpointProps) => {
   return(
     <div className="rounded-2xl border p-4 mt-4 bg-transparent">
       <button className="p-2 rounded-1xl border">{sectionHeader}</button>
@@ -62,7 +62,7 @@ export function PainpointBox({children, sectionHeader}: PainpointProps){
   )
 }
 
-export function ThumbnailBg({imageUrl}: ThumbnailBgProps){
+const ThumbnailBg = ({imageUrl}: ThumbnailBgProps) => {
   return(
     <div className="p-4 rounded-2xl bg-[#1B1B1B] md:w-[40rem] lg:ml-[8rem] lg:mr-[8rem] lg:p-[2.5rem] lg:w-[60rem]">
         <Image src={imageUrl} alt="tantalizer" className="md:w-[40rem] lg:w-dvw" width={350} height={350}/>
@@ -70,7 +70,7 @@ export function ThumbnailBg({imageUrl}: ThumbnailBgProps){
   )
 }
 
-export function ThumbnailBg2({imageUrl}: ThumbnailBgProps){
+const ThumbnailBg2 = ({imageUrl}: ThumbnailBgProps) => {
   return(
     <div className="p-4 rounded-2xl bg-[#1B1B1B] flex flex-col gap-8 md:w-[40rem]lg:w-[30rem] ">
         <Image src={imageUrl} alt="tantalizer" className="md:w-[38rem] lg:w-[25rem]" width={350} height={350}/>
@@ -78,7 +78,7 @@ export function ThumbnailBg2({imageUrl}: ThumbnailBgProps){
   )
 }
 
-export function ThumbnailBg3({imageUrl, logoUrl}: ThumbnailBg3Props){
+const ThumbnailBg3 = ({imageUrl, logoUrl}: ThumbnailBg3Props) => {
   return(
     <div className="p-4 rounded-2xl bg-[#1B1B1B] flex flex-col gap-8 md:w-[40rem">
         <Image src={logoUrl} alt="slantedLogo" className="md:w-[20rem] lg:w-[10rem]" width={150} height={150}/>
@@ -86,7 +86,7 @@ export function ThumbnailBg3({imageUrl, logoUrl}: ThumbnailBg3Props){
     </div>
   )
 }
-export function RetrospectBoxes({number, heading, children}: RetrospectProps){
+const RetrospectBoxes = ({number, heading, children}: RetrospectProps) => {
   return(
     <div className="rounded-2xl border p-4 bg-transparent">
       <h2 className="text-orange-400 font-bold">{number}</h2>
@@ -97,7 +97,7 @@ export function RetrospectBoxes({number, heading, children}: RetrospectProps){
   )
 }
 
-export function Button(){
+const Button = () => {
   return(
     <div className="rounded-4xl pt-3 pb-3 pl-8 pr-8 border-2 border-amber-400 bg-gray-400 w-[15rem] mt-4 md:w-[20rem]">
         Next Project
@@ -105,7 +105,7 @@ export function Button(){
   )
 }
 
-export function Tantalizer(){
+export default function Tantalizer(){
   return(
    <div className="bg-black pb-8 pt-12 text-white text-[20px] overflow-hidden">
 
@@ -319,5 +319,3 @@ export function Tantalizer(){
    </div>
   )
 }
-
-export default Tantalizer

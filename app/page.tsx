@@ -53,10 +53,10 @@ const Home = () => {
  <Link href="/slider-bar" style={{ color: '#3182ce', textDecoration: 'underline' }}>
  Sidebar Design 
  </Link>
-        <Link href="/recent-project">ProjectCard</Link>
-        <Link href="/proficient-areas">Proficient Areas</Link>
-        <Link href="/about-me">About Me</Link>
-        <Link href="/tantalizer">Tantalizer</Link>
+  <Link href="/recent-project"  style={{ color: '#3182ce', textDecoration: 'underline' }}>ProjectCard</Link>
+  <Link href="/proficient-areas" style={{ color: '#3182ce', textDecoration: 'underline' }}>Proficient Areas</Link>
+  <Link href="/about-me" style={{ color: '#3182ce', textDecoration: 'underline' }}>About Me</Link>
+  <Link href="/tantalizer" style={{ color: '#3182ce', textDecoration: 'underline' }}>Tantalizer</Link>
 
     </div>
   
