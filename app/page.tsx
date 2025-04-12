@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Home = () => {
   return (
-    <>
+
     <div
       style={{
         display: 'flex',
@@ -48,29 +48,23 @@ const Home = () => {
  <Link href="/thank-you-card" style={{ color: '#3182ce', textDecoration: 'underline' }}>
   Thank you card 
  </Link>
- <Link href="/my-care-assistants" style={{ color: '#3182ce', textDecoration: 'underline' }}>
+ <Link href="/my-care-assistants-design" style={{ color: '#3182ce', textDecoration: 'underline' }}>
   MyCare Assistants Design 
  </Link>
  <Link href="/slider-bar" style={{ color: '#3182ce', textDecoration: 'underline' }}>
  Sidebar Design 
  </Link>
-        <Link href="/recent-project">ProjectCard</Link>
-        <Link href="/proficient-areas">Proficient Areas</Link>
-        <Link href="/about-me">About Me</Link>
-</div>
+  <Link href="/recent-project"  style={{ color: '#3182ce', textDecoration: 'underline' }}>ProjectCard</Link>
+  <Link href="/proficient-areas" style={{ color: '#3182ce', textDecoration: 'underline' }}>Proficient Areas</Link>
+  <Link href="/about-me" style={{ color: '#3182ce', textDecoration: 'underline' }}>About Me</Link>
+  <Link href="/tantalizer" style={{ color: '#3182ce', textDecoration: 'underline' }}>Tantalizer</Link>
 
+    </div>
+    
+  );
+};
 
-  
-  <div className="items-center justify-center">
-  <Link href="/tools-stack">Go to ToolStack</Link>
-  <Link href="/case-study">Go to CaseStudy</Link>
-  <Link href="/projects">Go to Projects</Link>
-        </div>
-          </>
-        );
-  };
-  
-  export default Home;
+export default Home;
 
 
 

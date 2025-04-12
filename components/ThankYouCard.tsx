@@ -7,7 +7,7 @@ import styles from './ThankYou.module.css';
 // Font configurations
 const poppins = Poppins({ subsets: ['latin'], weight: ['400'] });
 const brunoAce = Bruno_Ace({ subsets: ['latin'], weight: '400' });
-const figtree = Figtree({ subsets: ['latin'], weight: '400' });
+const figtree = Figtree({ subsets: ['latin'], weight: ['400','800'] });
 
 const ThankYouFooter = () => {
   return (
@@ -58,8 +58,8 @@ const ThankYouFooter = () => {
 
       {/* THANK YOU Message */}
       <div className={`${styles.thankYouMessage} ${figtree.className}`}>
-        THANK YOU 
-        <span className={styles.highlight}>❤</span>
+        THANK 
+        <span className={styles.highlight}>YOU ❤</span>
       </div>
     </div>
   );

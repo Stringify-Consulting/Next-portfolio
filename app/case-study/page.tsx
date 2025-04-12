@@ -59,7 +59,12 @@ export default function CaseStudyPage() {
       <MyQuraClient />
       <MyQuraCareProfessional />
       <AdminPortal />
-      <ProjectCard />
+      <ProjectCard 
+        title="Sample Title" 
+        projectTitle="Sample Project Title" 
+        description="This is a sample description for the project card." 
+        imageSrc="/assets/sample-image.png" 
+      />
       <ThankYouFooter />
     </div>
   );

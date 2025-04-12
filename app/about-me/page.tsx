@@ -17,7 +17,7 @@ import picture9 from '../images/mrLawal_(9).png'
 import picture10 from '../images/mrLawal_(10).png'
 import picture11 from '../images/mrLawal_(11).png'
 
-export function Slider(){
+const Slider = () => {
    const images = [picture1, picture2, picture4, picture5, picture6, picture7, picture8, picture9, picture10, picture11]
 
     const [index, setIndex] = useState(0)
@@ -43,7 +43,7 @@ export function Slider(){
  )
 }
 
-export function Experience(){
+const Experience = () =>{
  return(
   <>
     <div className="p-3.5 w-90 border-[0.1rem] border-[#3b3a3a] rounded-xl bg-[#1f1c1c] experienceSection">
@@ -99,7 +99,7 @@ export function Experience(){
  )
 }
 
-export function Education(){
+const Education = () => {
  return(
   <>
     <div className="p-5 w-90 border-[0.1rem] border-[#3b3a3a] rounded-xl bg-[#1f1c1c] experienceSection">
