@@ -2,6 +2,7 @@ import Link from 'next/link';
 
 const Home = () => {
   return (
+
     <div
       style={{
         display: 'flex',
@@ -59,7 +60,7 @@ const Home = () => {
   <Link href="/tantalizer" style={{ color: '#3182ce', textDecoration: 'underline' }}>Tantalizer</Link>
 
     </div>
-  
+    
   );
 };
 
