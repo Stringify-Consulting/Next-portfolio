@@ -1,7 +1,12 @@
 import ImageCardComponent from '../../components/ImageCardStructure'; 
+import Head from 'next/head';
 
 const MyPage: React.FC = () => {
   return (
+    <>
+    <Head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=0.5, user-scalable=yes" />
+</Head>
     <div style={{
       backgroundColor: 'black',
     }}>
@@ -22,6 +27,7 @@ const MyPage: React.FC = () => {
       />
 
     </div>
+    </>
   );
 };
 

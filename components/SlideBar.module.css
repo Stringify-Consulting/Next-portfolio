@@ -4,7 +4,7 @@
   position: fixed;
   top: 25px;
   left: 8px;
-  height: 890px;
+  height: 990px;
   width: 40px;
   z-index: 1;
   background-color: transparent;
@@ -48,7 +48,7 @@
 
 /* Last Icon (Copy) positioning */
 .copyIcon {
-  margin-top: 300px;
+  margin-top: 370px;
 }
 
 /* Mobile Responsive */

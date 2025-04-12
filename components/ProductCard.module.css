@@ -10,7 +10,8 @@
     position: relative;
     opacity: 0.9;
     flex-wrap: wrap;
-    padding: 20px;
+    margin-left: 90px;
+    margin-top: 60px;
   }
   
   .textContainer {
@@ -86,6 +87,7 @@
       height: auto;
       gap: 20px;
       padding: 20px;
+      margin-left: 5px;
     }
   
     .textContainer {

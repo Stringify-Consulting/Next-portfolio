@@ -47,7 +47,7 @@ const Home = () => {
  <Link href="/thank-you-card" style={{ color: '#3182ce', textDecoration: 'underline' }}>
   Thank you card 
  </Link>
- <Link href="/my-care-assistants" style={{ color: '#3182ce', textDecoration: 'underline' }}>
+ <Link href="/my-care-assistants-design" style={{ color: '#3182ce', textDecoration: 'underline' }}>
   MyCare Assistants Design 
  </Link>
  <Link href="/slider-bar" style={{ color: '#3182ce', textDecoration: 'underline' }}>
