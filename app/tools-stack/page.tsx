@@ -1,6 +1,6 @@
 "use client"
 
-import ToolStack from "../components/Toolstack";
+import ToolStack from "../../components/Toolstack";
 
 const ToolStackPage = () => {
   const tools = [

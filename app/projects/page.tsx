@@ -1,6 +1,6 @@
 "use client";
 
-import ProjectCard from "../components/ProjectCardDefault";
+import ProjectCard from "../../components/ProjectCardDefault";
 
 const projects = [
   {

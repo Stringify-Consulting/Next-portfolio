@@ -1,6 +1,6 @@
 "use client";
 
-import ProjectCard from "@/app/components/ProjectCardDefault";
+import ProjectCard from "@/components/ProjectCardDefault";
 
 export default function ProjectCardsPage() {
   return (

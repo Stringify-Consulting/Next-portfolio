@@ -1,15 +1,15 @@
 "use client";
 
-import HeroSection from "../components/HeroSection";
+import HeroSection from "../../components/HeroSection";
 import Image from "next/image";
 import styles from "./page.module.css";
-import ProblemSolution from "../components/ProblemSolution";
-import ClientOverview from "../components/ClientOverview";
-import Storyboarding from "../components/StoryBoarding";
-import TargetAudience from "../components/TargetAudience";
-import MyQuraClient from "../components/MyQuraClient";
-import MyQuraCareProfessional from "../components/MqcProfessional";
-import AdminPortal from "../components/AdminPortal";
+import ProblemSolution from "../../components/ProblemSolution";
+import ClientOverview from "../../components/ClientOverview";
+import Storyboarding from "../../components/StoryBoarding";
+import TargetAudience from "../../components/TargetAudience";
+import MyQuraClient from "../../components/MyQuraClient";
+import MyQuraCareProfessional from "../../components/MqcProfessional";
+import AdminPortal from "../../components/AdminPortal";
 import ThankYouFooter from "@/components/ThankYouCard";
 import Sidebar from "@/components/SliderBar";
 import ToggleButton from "@/components/ToggleButton"; 
