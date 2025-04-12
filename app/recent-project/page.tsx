@@ -7,11 +7,11 @@ import coloredImage2 from '../images/recentCards (6).png'
 import coloredImage3 from '../images/recentCards (1).png'
 import '../styling/bits.css'
 
-export function RecentProjectSection(){
+const RecentProjectSection = () => {
  return(
   <>
      <div className="text-7xl text-white mt-8 recentProjectHeading">
-        <span className="font-bold">RECENT</span> <span   className="italic">PROJECTS</span> 
+        <span className="font-bold text-white">RECENT</span> <span   className="italic text-white">PROJECTS</span> 
       </div>
 
     <section className="flex justify-center gap-2.5 align-middle subheader">
