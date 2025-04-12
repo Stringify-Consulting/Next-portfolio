@@ -54,35 +54,10 @@ const Home = () => {
  <Link href="/slider-bar" style={{ color: '#3182ce', textDecoration: 'underline' }}>
  Sidebar Design 
  </Link>
- <Link href="/recent-project" style={{ color: '#3182ce', textDecoration: 'underline' }}>ProjectCard</Link>
-<Link href="/proficient-areas" style={{ color: '#3182ce', textDecoration: 'underline' }}>Proficient Areas</Link>
-<Link href="/about-me" style={{ color: '#3182ce', textDecoration: 'underline' }}>About Me</Link>
-<Link href="/tantalizer" style={{ color: '#3182ce', textDecoration: 'underline' }}>Tantalizer</Link>
-
-<Link href="/tantalizer-design" style={{ color: '#3182ce', textDecoration: 'underline' }}>
-  Tantalizer Design
-</Link>
-<Link href="/home-page-card" style={{ color: '#3182ce', textDecoration: 'underline' }}>
-  Homepage Components
-</Link>
-<Link href="/rock-realty-limited-design" style={{ color: '#3182ce', textDecoration: 'underline' }}>
-  Rock Realty Limited Design
-</Link>
-<Link href="/menu-slider" style={{ color: '#3182ce', textDecoration: 'underline' }}>
-  Menu Slider
-</Link>
-<Link href="/video-components" style={{ color: '#3182ce', textDecoration: 'underline' }}>
-  video component
-</Link>
-<Link href="/kwats-page-design" style={{ color: '#3182ce', textDecoration: 'underline' }}>
-  Kwats Page Design
-</Link>
-<Link href="/coming-soon" style={{ color: '#3182ce', textDecoration: 'underline' }}>
-  Coming Soon Component
-</Link>
-  {/* <Link href="/tools-stack" style={{ color: '#3182ce', textDecoration: 'underline' }}>Go to ToolStack</Link>
-  <Link href="/case-study" style={{ color: '#3182ce', textDecoration: 'underline' }}>Go to CaseStudy</Link>
-  <Link href="/projects" style={{ color: '#3182ce', textDecoration: 'underline' }}>Go to Projects</Link> */}
+  <Link href="/recent-project"  style={{ color: '#3182ce', textDecoration: 'underline' }}>ProjectCard</Link>
+  <Link href="/proficient-areas" style={{ color: '#3182ce', textDecoration: 'underline' }}>Proficient Areas</Link>
+  <Link href="/about-me" style={{ color: '#3182ce', textDecoration: 'underline' }}>About Me</Link>
+  <Link href="/tantalizer" style={{ color: '#3182ce', textDecoration: 'underline' }}>Tantalizer</Link>
 
     </div>
     
