@@ -1,4 +1,5 @@
 import ProjectCard from '@/components/ProductCard';
+import imageScene from '@/public/image/Scene 12 1 (1).png'
 
 const HomePage: React.FC = () => {
   return (
@@ -8,11 +9,12 @@ const HomePage: React.FC = () => {
           inset: 0,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          opacity: "4.9"
+          opacity: "4.9",
+          overflow: "hidden"
            
 }}>
        
-      <ProjectCard />
+      <ProjectCard title="NEXT PROJECT" projectTitle='Real Estate Website' description='Redesign' imageSrc={imageScene}/>
     </div>
   );
 };

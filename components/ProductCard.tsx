@@ -1,6 +1,6 @@
 'use client';
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData} from "next/image";
 import { Bruno_Ace, Poppins } from 'next/font/google'; 
 import styles from './ProductCard.module.css';
 import NextProjectButton from '@/components/ArrowButton';
@@ -14,7 +14,7 @@ interface ProjectCardProps {
   title: string;
   projectTitle: string;
   description: string;
-  imageSrc: string;
+  imageSrc: string | StaticImageData;
   button?: boolean;
 }
 

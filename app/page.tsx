@@ -9,7 +9,7 @@ const Home = () => {
         justifyContent: 'center', 
         alignItems: 'center', 
         height: '100vh', 
-        backgroundColor: '#f5f5f5', 
+        backgroundColor: '#4f4f4f', 
         flexDirection: 'column'
       }}
     >
@@ -54,10 +54,10 @@ const Home = () => {
  <Link href="/slider-bar" style={{ color: '#3182ce', textDecoration: 'underline' }}>
  Sidebar Design 
  </Link>
- <Link href="/recent-project">ProjectCard</Link>
-<Link href="/proficient-areas">Proficient Areas</Link>
-<Link href="/about-me">About Me</Link>
-<Link href="/tantalizer">Tantalizer</Link>
+ <Link href="/recent-project" style={{ color: '#3182ce', textDecoration: 'underline' }}>ProjectCard</Link>
+<Link href="/proficient-areas" style={{ color: '#3182ce', textDecoration: 'underline' }}>Proficient Areas</Link>
+<Link href="/about-me" style={{ color: '#3182ce', textDecoration: 'underline' }}>About Me</Link>
+<Link href="/tantalizer" style={{ color: '#3182ce', textDecoration: 'underline' }}>Tantalizer</Link>
 
 <Link href="/tantalizer-design" style={{ color: '#3182ce', textDecoration: 'underline' }}>
   Tantalizer Design
@@ -80,9 +80,9 @@ const Home = () => {
 <Link href="/coming-soon" style={{ color: '#3182ce', textDecoration: 'underline' }}>
   Coming Soon Component
 </Link>
-  <Link href="/tools-stack">Go to ToolStack</Link>
-  <Link href="/case-study">Go to CaseStudy</Link>
-  <Link href="/projects">Go to Projects</Link>
+  {/* <Link href="/tools-stack" style={{ color: '#3182ce', textDecoration: 'underline' }}>Go to ToolStack</Link>
+  <Link href="/case-study" style={{ color: '#3182ce', textDecoration: 'underline' }}>Go to CaseStudy</Link>
+  <Link href="/projects" style={{ color: '#3182ce', textDecoration: 'underline' }}>Go to Projects</Link> */}
 
     </div>
     
