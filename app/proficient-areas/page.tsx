@@ -16,7 +16,7 @@ interface NitcheBoxProps{
 }
 
 
-const NitcheBox = ({children, iconUrl, heading}:NitcheBoxProps) => {
+export function NitcheBox({children, iconUrl, heading}:NitcheBoxProps){
   return(
     <>
       <div className="border-gray-300 border bg-[#0f0f0f] rounded-3xl w-96 p-5 text-left areaContainer">
@@ -32,12 +32,12 @@ export default function ProficientAreas() {
  return(
   <div className="text-white mt-60">
     <div className="text-7xl proficientHeader">
-      <span className="italic text-white">PROFICIENT</span> <span className="font-bold text-white">AREAS</span>
+      <span className="italic">PROFICIENT</span> <span className="font-bold">AREAS</span>
     </div>
     <div className="flex justify-center gap-2.5 align-middle specifications">
-      <div className='text-white'>SKILL NICHE</div>
+      <div className='text-black'>SKILL NICHE</div>
       <div className="w-2xs h-0.5 bg-amber-50 flex justify-center mt-2.5 stroke"></div>
-      <div className='text-white'>SPECIALTIES</div>
+      <div className='text-black'>SPECIALTIES</div>
     </div>
  
     <section className="grid grid-cols-3 gap-x-3 gap-y-10 pt-10 p-9 sm:grid-rows-1 proficientAreaGrid">
