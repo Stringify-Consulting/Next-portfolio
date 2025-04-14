@@ -80,9 +80,9 @@ const Home = () => {
 <Link href="/coming-soon" style={{ color: '#3182ce', textDecoration: 'underline' }}>
   Coming Soon Component
 </Link>
-  <Link href="/tools-stack">Go to ToolStack</Link>
-  <Link href="/case-study">Go to CaseStudy</Link>
-  <Link href="/projects">Go to Projects</Link>
+  <Link href="/tools-stack" style={{ color: '#3182ce', textDecoration: 'underline' }}>Go to ToolStack</Link>
+  <Link href="/case-study" style={{ color: '#3182ce', textDecoration: 'underline' }}>Go to CaseStudy</Link>
+  <Link href="/projects" style={{ color: '#3182ce', textDecoration: 'underline' }}>Go to Projects</Link>
 
     </div>
     
